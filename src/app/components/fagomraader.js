@@ -15,42 +15,42 @@ export default function Fagomraader() {
             title: "bygherrerådgivning",
             img: <FaHandshake className='text-accent' size={75} />,
             button: "til bygherrerådgivning",
-            link: "/ydelser/bygherreraadgivning",
+            link: "/fagomraader/bygherreraadgivning",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
             title: "byggeteknisk rådgivning",
             img: <AiFillSchedule className='text-accent' size={75} />,
             button: "til byggeteknisk rådgivning",
-            link: "/ydelser/byggeteknisk-raadgivning",
+            link: "/fagomraader/byggeteknisk-raadgivning",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
             title: "byggetilsyn",
             img: <FaVest className='text-accent' size={75} />,
             button: "til byggetilsyn",
-            link: "/ydelser/byggetilsyn",
+            link: "/fagomraader/byggetilsyn",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
             title: "sikkerheds repræsentant",
             img: <FaHelmetSafety className='text-accent' size={75} />,
             button: "til sikkerhedsrepræsentation",
-            link: "/ydelser/sikkerhedsrepraesentant",
+            link: "/fagomraader/sikkerhedsrepraesentant",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
             title: "entrepriseretslig rådgivning",
             img: <SiQuicklook className='text-accent' size={75} />,
             button: "til entrepriseret",
-            link: "/ydelser/entrepriseret",
+            link: "/fagomraader/entrepriseret",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
             title: "totalrådgivning",
             img: <GiHammerNails className='text-accent' size={75} />,
             button: "til totalrådgivning",
-            link: "/ydelser/totalraadgivning",
+            link: "/fagomraader/totalraadgivning",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
     ];

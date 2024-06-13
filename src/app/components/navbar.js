@@ -108,7 +108,7 @@ export default function Navigation() {
                         src="/logos/willumlogoWhite.png"
                     />
                 </Link> */}
-                <Link className="text-white" href="/kontakt-os#formular">
+                <Link className="text-white" href="/kontakt">
                     <FiMail className="size-9" />
                 </Link>
 

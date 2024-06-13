@@ -10,7 +10,12 @@ export default function Home() {
   return (
     <NextUIProvider>
       <main className="mx-auto">
-        <header className="w-full h-screen bg-[url('/heroOverlay.jpg')] bg-no-repeat bg-center bg-cover mx-auto justify-center items-start grid grid-cols-4 grid-rows-3">
+        <header
+          className="w-full h-screen bg-no-repeat bg-center bg-cover mx-auto justify-center items-start grid grid-cols-4 grid-rows-3"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 25, 0.25), rgba(0, 0, 25, 0.25)), url('/heroImage.jfif')`,
+          }}
+        >
           <div className="flex flex-col font-medium max-w-6xl uppercase text-heroText col-start-2 col-span-2 row-start-2 pt-10">
             <h1 className="text-6xl md:text-4xl lg:text-[85px]">willum cph.</h1>
             <h2 className="text-4xl md:text-3xl mt-20">bygherrerådgivning &amp; <br /> styringsentreprise</h2>
