@@ -7,13 +7,13 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, Dropd
 const menuItems = [
     { label: "forside", href: "/" },
     {
-        label: "ydelser", href: "/#ydelser", dropdown: true, dropdownItems: [
-            { label: "bygherrerådgivning", href: "/ydelser/bygherreraadgivning" },
-            { label: "byggeteknisk rådgivning", href: "/ydelser/byggeteknisk-raadgivning" },
-            { label: "byggetilsyn", href: "/ydelser/byggetilsyn" },
-            { label: "totalrådgivning", href: "/ydelser/totalraadgivning" },
-            { label: "sikkerhedsrepræsentation", href: "/ydelser/sikkerhedsrepraesentant" },
-            { label: "entrepriseret", href: "/ydelser/entrepriseret" },
+        label: "fagområder", href: "/#fagomraader", dropdown: true, dropdownItems: [
+            { label: "bygherrerådgivning", href: "/fagomraader/bygherreraadgivning" },
+            { label: "byggeteknisk rådgivning", href: "/fagomraader/byggeteknisk-raadgivning" },
+            { label: "byggetilsyn", href: "/fagomraader/byggetilsyn" },
+            { label: "totalrådgivning", href: "/fagomraader/totalraadgivning" },
+            { label: "sikkerhedsrepræsentation", href: "/fagomraader/sikkerhedsrepraesentant" },
+            { label: "entrepriseret", href: "/fagomraader/entrepriseret" },
         ]
     },
     { label: "kunder & projekter", href: "/projekter" },
@@ -79,7 +79,7 @@ export default function Navigation() {
                                         src="/chevron-down.svg"
                                         width={30}
                                         height={30}
-                                        alt="Open ydelser submenu"
+                                        alt="Vis fagområder"
                                     />
                                 </DropdownTrigger>
                                 <DropdownMenu className="p-2 uppercase text-primary-blue bg-white rounded-lg">

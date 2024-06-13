@@ -23,6 +23,25 @@ const options = [
     },
 ];
 
+const formaal = [
+    {
+        title: "privat",
+        content: "for dig der gerne vil have hjælp i det private"
+    },
+    {
+        title: "erhverv",
+        content: "for dig der gerne vil have hjælp i det private"
+    },
+    {
+        title: "business",
+        content: "for dig der gerne vil have hjælp i det private"
+    },
+    {
+        title: "øvrige",
+        content: "for dig der gerne vil have hjælp i det private"
+    }
+]
+
 export default function Kontakt() {
     return (
         <>
@@ -41,87 +60,95 @@ export default function Kontakt() {
             </article>
 
             <section className='py-20 bg-accentBg'>
-                <div className='max-w-7xl mx-auto flex'>
-                    <div>
-                        <SectionHeading heading="hvilket formål?" />
+                <div className='max-w-7xl mx-auto'>
+                    <SectionHeading heading="hvilket formål?" />
+                    <div className='flex justify-between pt-10 max-w-7xl mx-auto'>
+                        <div className='flex flex-col justify-evenly'>
+                            {formaal.map((item, i) => (
+                                <article key={i} className='w-[400px] h-[100px] bg-white rounded p-4 flex flex-col justify-evenly border-1 border-accent/50 shadow-md shadow-accent/50'>
+                                    <h4 className='uppercase font-semibold'>{item.title}</h4>
+                                    <p>{item.content}</p>
+                                </article>
+                            ))}
+                        </div>
+                        <form
+                            id="formular"
+                            name="contact"
+                            method="POST"
+                            action="/kontakt-os"
+                            netlify-honeypot="bot-field"
+                            data-netlify="true"
+                            className="lg:w-[800px] max-w-lg mx-auto lg:mx-0 rounded-md bg-white shadow-sm shadow-accent text-white"
+                        >
+                            <input type="hidden" name="form-name" value="contact" />
+                            <div className="px-5 py-5 mb-5 bg-accent rounded-t-md">
+                                <h3 className="text-2xl font-extrabold uppercase">
+                                    Skriv til os:
+                                </h3>
+                                <span className="font-medium">Vi bestræber os på at svare indenfor 1-3 hverdage.</span>
+                            </div>
+                            {/* Bot-trigger field */}
+                            <div className="hidden">
+                                <label>
+                                    Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+                                </label>
+                            </div>
+                            <div className="mb-8 px-5">
+                                <Input
+                                    isRequired
+                                    radius='sm'
+                                    variant="faded"
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    label="Navn"
+                                    />
+                            </div>
+                            <div className="mb-8 px-5">
+                                <Input
+                                    isRequired
+                                    radius="sm"
+                                    variant="faded"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    label="E-mail"
+                                />
+                            </div>
+                            <div className="mb-8 px-5">
+                                <Select
+                                    name="Role[]"
+                                    variant="faded"
+                                    radius="sm"
+                                    isRequired
+                                    label="Emne:"
+                                    className="max-w-full"
+                                >
+                                    {options.map((option, i) => (
+                                        <SelectItem key={i} value={option.value}>
+                                            {option.label}
+                                        </SelectItem>
+                                    ))}
+                                </Select>
+                            </div>
+                            <div className="mb-8 px-5">
+                                <Textarea
+                                    variant="faded"
+                                    radius="sm"
+                                    isRequired
+                                    name="message"
+                                    id="message"
+                                    placeholder="Skriv din besked her.."
+                                    label="Indhold"
+                                    className="max-w-full"
+                                />
+                            </div>
+                            <div className="flex justify-center rounded-b-md bg-accent">
+                                <button className='py-5 text-2xl' type='submit'>SEND</button>
+                            </div>
+                            <div data-netlify-recaptcha="true"></div>
+                        </form>
                     </div>
-                    <form
-                        id="formular"
-                        name="contact"
-                        method="POST"
-                        action="/kontakt-os"
-                        netlify-honeypot="bot-field"
-                        data-netlify="true"
-                        className="lg:w-[800px] max-w-lg mx-auto ml-5 mr-5 lg:mx-0 my-10 rounded-md bg-white shadow-sm shadow-accent text-white"
-                    >
-                        <input type="hidden" name="form-name" value="contact" />
-                        <div className="px-5 py-5 mb-5 bg-accent rounded-t-md">
-                            <h3 className="text-2xl font-extrabold uppercase">
-                                Skriv til os:
-                            </h3>
-                            <span className="font-medium">Vi bestræber os på at svare indenfor 1-3 hverdage.</span>
-                        </div>
-                        {/* Bot-trigger field */}
-                        <div className="hidden">
-                            <label>
-                                Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-                            </label>
-                        </div>
-                        <div className="mb-8 px-5">
-                            <Input
-                                isRequired
-                                radius="none"
-                                variant="faded"
-                                type="text"
-                                name="name"
-                                id="name"
-                                label="Navn"
-                            />
-                        </div>
-                        <div className="mb-8 px-5">
-                            <Input
-                                isRequired
-                                radius="none"
-                                variant="faded"
-                                type="email"
-                                name="email"
-                                id="email"
-                                label="E-mail"
-                            />
-                        </div>
-                        <div className="mb-8 px-5">
-                            <Select
-                                name="Role[]"
-                                variant="faded"
-                                radius="none"
-                                isRequired
-                                label="Emne:"
-                                className="max-w-full"
-                            >
-                                {options.map((option, i) => (
-                                    <SelectItem key={i} value={option.value}>
-                                        {option.label}
-                                    </SelectItem>
-                                ))}
-                            </Select>
-                        </div>
-                        <div className="mb-8 px-5">
-                            <Textarea
-                                variant="faded"
-                                radius="none"
-                                isRequired
-                                name="message"
-                                id="message"
-                                placeholder="Skriv din besked her.."
-                                label="Indhold"
-                                className="max-w-full"
-                            />
-                        </div>
-                        <div className="flex justify-center rounded-b-md bg-accent">
-                           <button className='py-5 text-2xl' type='submit'>SEND</button>
-                        </div>
-                        <div data-netlify-recaptcha="true"></div>
-                    </form>
                 </div>
             </section>
         </>
