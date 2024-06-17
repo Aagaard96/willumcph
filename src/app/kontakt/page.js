@@ -47,9 +47,9 @@ export default function Kontakt() {
         <>
             <Hero backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="kontakt os" />
 
-            <article className="py-20 mx-auto max-w-7xl">
+            <article className="py-20 mx-auto max-w-7xl px-5">
                 <SectionHeading heading="hvad kan vi gøre for dig?" />
-                <div className="flex gap-10 pt-10 text-lg">
+                <div className="flex flex-col md:flex-row gap-10 pt-10 text-lg">
                     <p className="flex-1">Bygningskonstruktion og Design er vores specialitet, og vi er stolte af at tilbyde skræddersyede løsninger til vores kunder. Som erfarne bygningsingeniører forstår vi vigtigheden af at levere højkvalitetsarbejde inden for tidsplanen og budgettet.
                         Vi har en dokumenteret track record af succesfulde projekter, lige fra boligbyggeri til kommercielle faciliteter. Vores ekspertise omfatter alt fra konceptudvikling og design til konstruktionsovervågning og kvalitetskontrol.
                         Uanset om du har brug for rådgivning om nybyggeri, renovering af eksisterende strukturer eller løsninger til bæredygtigt byggeri, er vi her for at imødekomme dine behov og sikre, at dit projekt realiseres med succes.</p>
@@ -59,94 +59,96 @@ export default function Kontakt() {
                 </div>
             </article>
 
-            <section className='py-20 bg-accentBg'>
+            <section className='py-20 bg-accentBg px-5'>
                 <div className='max-w-7xl mx-auto'>
                     <SectionHeading heading="hvilket formål?" />
-                    <div className='flex justify-between pt-10 max-w-7xl mx-auto'>
-                        <div className='flex flex-col justify-evenly'>
+                    <div className='flex flex-col lg:flex-row mt-10 gap-10 lg:gap-0 max-w-7xl'>
+                        <div className='flex flex-col justify-evenly flex-1'>
                             {formaal.map((item, i) => (
-                                <article key={i} className='w-[400px] h-[100px] bg-white rounded p-4 flex flex-col justify-evenly border-1 border-accent/50 shadow-md shadow-accent/50'>
+                                <article key={i} className='lg:w-[400px] h-[100px] bg-white rounded p-4 flex flex-col justify-evenly border-1 border-accent/50 shadow-md shadow-accent/50'>
                                     <h4 className='uppercase font-semibold'>{item.title}</h4>
                                     <p>{item.content}</p>
                                 </article>
                             ))}
                         </div>
-                        <form
-                            name="contact"
-                            method="POST"
-                            action="/kontakt-os"
-                            netlify-honeypot="bot-field"
-                            data-netlify="true"
-                            className="lg:w-[800px] max-w-lg mx-auto lg:mx-0 rounded-md bg-white shadow-sm shadow-accent text-white"
-                        >
-                            <input type="hidden" name="form-name" value="contact" />
-                            <div className="px-5 py-5 mb-5 bg-accent rounded-t-md">
-                                <h3 className="text-2xl font-extrabold uppercase">
-                                    Skriv til os:
-                                </h3>
-                                <span className="font-medium">Vi bestræber os på at svare indenfor 1-3 hverdage.</span>
-                            </div>
-                            {/* Bot-trigger field */}
-                            <div className="hidden">
-                                <label>
-                                    Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-                                </label>
-                            </div>
-                            <div className="mb-8 px-5">
-                                <Input
-                                    isRequired
-                                    radius='sm'
-                                    variant="faded"
-                                    type="text"
-                                    name="name"
-                                    id="name"
-                                    label="Navn"
-                                />
-                            </div>
-                            <div className="mb-8 px-5">
-                                <Input
-                                    isRequired
-                                    radius="sm"
-                                    variant="faded"
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    label="E-mail"
-                                />
-                            </div>
-                            <div className="mb-8 px-5">
-                                <Select
-                                    name="Role[]"
-                                    variant="faded"
-                                    radius="sm"
-                                    isRequired
-                                    label="Emne:"
-                                    className="max-w-full"
-                                >
-                                    {options.map((option, i) => (
-                                        <SelectItem key={i} value={option.value}>
-                                            {option.label}
-                                        </SelectItem>
-                                    ))}
-                                </Select>
-                            </div>
-                            <div className="mb-8 px-5">
-                                <Textarea
-                                    variant="faded"
-                                    radius="sm"
-                                    isRequired
-                                    name="message"
-                                    id="message"
-                                    placeholder="Skriv din besked her.."
-                                    label="Indhold"
-                                    className="max-w-full"
-                                />
-                            </div>
-                            <div className="flex justify-center rounded-b-md bg-accent">
-                                <button className='py-5 text-2xl' type='submit'>SEND</button>
-                            </div>
-                            <div data-netlify-recaptcha="true"></div>
-                        </form>
+                        <article className='flex-1'>
+                            <form
+                                name="contact"
+                                method="POST"
+                                action="/kontakt-os"
+                                netlify-honeypot="bot-field"
+                                data-netlify="true"
+                                className="rounded-md bg-mainBg shadow-sm shadow-accent text-mainText"
+                            >
+                                <input type="hidden" name="form-name" value="contact" />
+                                <div className="px-5 py-5 mb-8 bg-accent rounded-t-md text-mainBg">
+                                    <h3 className="text-2xl font-extrabold uppercase">
+                                        Skriv til os:
+                                    </h3>
+                                    <span className="font-medium">Vi bestræber os på at svare indenfor 1-3 hverdage.</span>
+                                </div>
+                                {/* Bot-trigger field */}
+                                <div className="hidden">
+                                    <label>
+                                        Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
+                                    </label>
+                                </div>
+                                <div className="mb-8 px-5">
+                                    <Input
+                                        isRequired
+                                        radius='sm'
+                                        variant="faded"
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        label="Navn:"
+                                    />
+                                </div>
+                                <div className="mb-8 px-5">
+                                    <Input
+                                        isRequired
+                                        radius="sm"
+                                        variant="faded"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        label="E-mail:"
+                                    />
+                                </div>
+                                <div className="mb-8 px-5">
+                                    <Select
+                                        name="Role[]"
+                                        variant="faded"
+                                        radius="sm"
+                                        isRequired
+                                        className="max-w-full"
+                                        label="Formål:"
+                                    >
+                                        {options.map((option, i) => (
+                                            <SelectItem key={i} value={option.value}>
+                                                {option.label}
+                                            </SelectItem>
+                                        ))}
+                                    </Select>
+                                </div>
+                                <div className="mb-8 px-5">
+                                    <Textarea
+                                        variant="faded"
+                                        radius="sm"
+                                        isRequired
+                                        name="message"
+                                        id="message"
+                                        placeholder="Skriv din besked her.."
+                                        label="Besked:"
+                                        className="max-w-full"
+                                    />
+                                </div>
+                                <div className="flex justify-center rounded-b-md bg-accent hover:bg-accent/50 transition-colors duration-200 text-mainBg">
+                                    <button className='py-5 text-2xl uppercase' type='submit'>send besked</button>
+                                </div>
+                                <div data-netlify-recaptcha="true"></div>
+                            </form>
+                        </article>
                     </div>
                 </div>
             </section>

@@ -10,11 +10,11 @@ export default function Byggeraadgivning() {
     <>
       <Hero backgroundImage="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="bygherrerådgivning" />
 
-      <section className=" py-20 mx-auto max-w-7xl">
-        <article className="flex gap-20">
+      <section className="py-20 mx-auto max-w-7xl px-5">
+        <article className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           <div className="flex-1">
             <SectionHeading heading="bygherrerådgivning" />
-            <div className="mt-10 max-w-lg flex flex-col gap-5 text-xl">
+            <div className="mt-10 max-w-lg flex flex-col gap-5 text-lg">
               <p>
                 Quisque et nunc quis quam convallis luctus vel vel erat. Nulla
                 facilisi. Nullam semper cursus eros, sed maximus augue varius sit
@@ -40,7 +40,7 @@ export default function Byggeraadgivning() {
             </div>
           </div>
 
-          <div className="flex justify-end items-center">
+          <div className="flex justify-center lg:justify-end items-center">
             <Image
               className="rounded"
               src="https://images.unsplash.com/photo-1608303588026-884930af2559?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -50,17 +50,17 @@ export default function Byggeraadgivning() {
             />
           </div>
         </article>
-        <article className="flex gap-20 mt-20">
-          <div className="flex justify-end items-center">
+        <article className="flex flex-col lg:flex-row gap-10 md:gap-20 mt-20">
+          <div className="flex justify-end items-center order-2 lg:order-1">
             <Image
-              className="rounded"
+              className="rounded hidden lg:block"
               src="https://images.unsplash.com/photo-1542350880924-09225f70e026?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               width={600}
               height={400}
               alt="Test"
             />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 order-1">
             <h4 className="uppercase font-bold text-4xl">Hvordan vi arbejder</h4>
             <div className="mt-10 max-w-lg flex flex-col gap-5 text-xl">
               <p>

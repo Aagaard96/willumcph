@@ -13,12 +13,12 @@ const StaggerAnimationVariants = {
         transition: {
             duration: 0.5, // Shortened duration for a quicker appearance
             ease: "easeOut", // Easing for a smoother transition
-            delay: 0.3 * index, // Delay to create a staggered effect
+            delay: 0.2 * index, // Delay to create a staggered effect
         },
     }),
 };
 
-export default function StaggerAnimation({ children, index,  className }) {
+export default function StaggerAnimation({ children, index, className }) {
     return (
 
         <motion.as

@@ -54,14 +54,14 @@ export default function Ansatte({ }) {
     return (
         <>
             {ansatInfo.map((info, index) => (
-                <Card key={index} className="place-self-center max-w-[300px] sm:max-w-[400px] mt-20 overflow-visible border-accent/50 border rounded-md text-accent">
-                    <CardHeader className="justify-center flex flex-col gap-5 -mt-20">
+                <Card key={index} className="place-self-center max-w-[400px] lg:max-w-[500px] mt-20 overflow-visible border-accent/50 border rounded-md text-accent">
+                    <CardHeader className="justify-center flex flex-col gap-5 -mt-28">
                         <Image className="md:w-[300px] border-3 border-accent"
                             alt="Employee Profile"
                             radius="full"
                             src={info.img}
-                            height={175}
-                            width={175}
+                            height={225}
+                            width={225}
                             shadow="none"
                         />
                         <div className="flex justify-center text-center flex-col">
