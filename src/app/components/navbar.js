@@ -51,11 +51,12 @@ export default function Navigation() {
 
             <NavbarBrand className="justify-center">
                 <Link className="text-white hover:opacity-1 text-3xl md:text-4xl font-bold gap-0.5 items-baseline uppercase" href="/">
-                    <h1>willum</h1>
+                    <h1>willum</h1><div className=" flex items-baseline bg-white w-[12px] h-[12px] rounded-full"></div>
                 </Link>
             </NavbarBrand>
 
-            <NavbarMenu className="gap-5 lg:gap-10 items-center justify-center bg-accent/50">
+            <NavbarMenu
+                className="gap-5 lg:gap-10 items-center justify-center bg-accent/50 ">
                 {menuItems.map((item, index) => (
                     <div key={index} className="flex items-center">
                         <Link
@@ -71,7 +72,7 @@ export default function Navigation() {
                                 offset={15}
                                 key={`dropdown-${index}`}
                                 placement={placement}
-                                className="bg-blue-950 p-0"
+                                className="bg-accent/80 p-2 uppercase rounded text-white"
                             >
                                 <DropdownTrigger>
                                     <Image style={{ transform: `rotate(${rotate}deg)` }}
@@ -82,10 +83,12 @@ export default function Navigation() {
                                         alt="Vis fagområder"
                                     />
                                 </DropdownTrigger>
-                                <DropdownMenu className="p-2 uppercase text-primary-blue bg-white rounded-lg">
+                                <DropdownMenu
+                                >
+
                                     {item.dropdownItems.map((dropdownItem, dropdownIndex) => (
                                         <DropdownItem
-                                            className="rounded-none"
+                                            className="rounded"
                                             key={`dropdown-item-${dropdownIndex}`}
                                             href={dropdownItem.href}
                                         >
@@ -113,6 +116,6 @@ export default function Navigation() {
                 </Link>
 
             </NavbarBrand>
-        </Navbar>
+        </Navbar >
     )
 }

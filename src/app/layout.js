@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="da" className={`${playfair.variable} ${inria.variable} scroll-smooth`}>
-      <body className='font-inria'>
+      <body className='font-inria' >
         <FixedStreamer />
         <Navigation />
         {children}

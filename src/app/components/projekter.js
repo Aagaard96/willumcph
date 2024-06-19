@@ -28,8 +28,8 @@ export default function Projekter() {
     return (
         <>
             {projekter.map((projekt, index) => (
-                <article key={index} className="w-[185px] h-[265px] sm:w-[250px] sm:h-[360px] md:w-[210px] md:h-[310px] lg:w-full lg:h-[360px] place-self-center bg-cover bg-no-repeat rounded shadow-lg shadow-accent/50 relative" style={{ backgroundImage: `url(${projekt.img})` }}>
-                    <h3 className='text-heroText uppercase absolute bottom-0 p-2 text-lg bg-accent w-full rounded-b'>{projekt.title}</h3>
+                <article key={index} className="w-[165px] h-[245px]  md:w-[210px] md:h-[310px] lg:w-full lg:h-[360px] place-self-center bg-cover bg-no-repeat rounded shadow-lg shadow-accent/50 relative" style={{ backgroundImage: `url(${projekt.img})` }}>
+                    <h3 className='text-heroText uppercase absolute bottom-0 p-2 text-sm md:text-lg bg-accent w-full rounded-b'>{projekt.title}</h3>
                 </article>
             ))}
         </>

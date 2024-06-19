@@ -18,9 +18,14 @@ export default function Home() {
           }}
         >
           <div className="flex flex-col font-medium max-w-6xl uppercase text-mainBg justify-center items-center md:items-start md:justify-start md:col-start-2 md:col-span-2 md:row-start-2 pt-10">
-            <Animation as="h1" type="OnlyAppear" duration={0.75} delay={0.15} className="text-6xl lg:text-8xl text-center md:text-start">willum cph.</Animation>
-            <Animation as="h2" type="OnlyAppear" duration={0.5} delay={0.35} className=" text-center md:text-start text-2xl md:text-4xl mt-10">bygherrerådgivning &amp; <br /> styringsentreprise</Animation>
-            <Animation as="div" type="OnlyAppear" duration={0.5} delay={0.55}>
+            <Animation as="h1" type="OnlyAppear" duration={1.25} delay={0.30} className="text-6xl lg:text-8xl text-center md:text-start flex items-baseline font-bold">
+              willum cph
+              <span className="flex items-baseline">
+                <span className="bg-white w-[25px] h-[25px] rounded-full inline-block ml-1"></span>
+              </span>
+            </Animation>
+            <Animation as="h2" type="OnlyAppear" duration={0.75} delay={0.75} className=" text-center md:text-start text-2xl md:text-4xl mt-10">bygherrerådgivning &amp; <br /> styringsentreprise</Animation>
+            <Animation as="div" type="OnlyAppear" duration={1.25} delay={1.25}>
               <CtaButton to="#ekspertise" content="læs mere" className="text-sm md:text-lg" />
             </Animation>
           </div>
@@ -38,7 +43,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-accentBg px-5">
+        <section className="py-20 bg-accentBg px-5" id="fagomraader">
           <div className="max-w-7xl mx-auto">
             <SectionHeading heading="vores fagområder" />
             <div className="flex flex-col md:flex-row gap-10 pt-10 text-lg">
@@ -55,12 +60,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 max-w-7xl mx-auto flex flex-col lg:flex-row gap-5 px-5 ">
-          <article className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-5 flex-1 order-2 lg:order-1">
+        <section className="py-20 max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 px-5 ">
+          <article className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-5 flex-1 order-2 lg:order-1">
             <Projekter />
           </article>
-
-
           <div className="flex-1 order-1">
             <SectionHeading heading="vores projekter" />
             <div className="flex flex-col  gap-10 pt-10 text-lg">
@@ -77,7 +80,7 @@ export default function Home() {
 
         <section className="py-10 bg-accentBg px-5">
           <div className="max-w-7xl mx-auto text-center flex flex-col items-center gap-5">
-            <SectionHeading heading="skal vi arbejde sammen?" className="text-2xl sm:text-3xl" />
+            <SectionHeading heading="skal vi arbejde sammen?" className="text-[1.5rem] md:text-3xl" />
             <p className="text-base md:text-2xl font-semibold">Ta&apos; en uforpligtende samtale med os, og se hvad vi kan gøre for jeres projekter.</p>
             <CtaButton to="/kontakt" content="kontakt os" className="mt-0 md:mt-4" />
           </div>

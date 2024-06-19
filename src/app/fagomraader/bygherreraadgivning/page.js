@@ -12,9 +12,9 @@ export default function Byggeraadgivning() {
 
       <section className="py-20 mx-auto max-w-7xl px-5">
         <article className="flex flex-col lg:flex-row gap-10 lg:gap-20">
-          <div className="flex-1">
+          <div className="flex-1 mx-auto">
             <SectionHeading heading="bygherrerådgivning" />
-            <div className="mt-10 max-w-lg flex flex-col gap-5 text-lg">
+            <div className="mt-10 lg:max-w-lg flex flex-col gap-5 text-lg">
               <p>
                 Quisque et nunc quis quam convallis luctus vel vel erat. Nulla
                 facilisi. Nullam semper cursus eros, sed maximus augue varius sit
@@ -60,9 +60,9 @@ export default function Byggeraadgivning() {
               alt="Test"
             />
           </div>
-          <div className="flex-1 order-1">
+          <div className="flex-1 order-1 mx-auto">
             <h4 className="uppercase font-bold text-4xl">Hvordan vi arbejder</h4>
-            <div className="mt-10 max-w-lg flex flex-col gap-5 text-xl">
+            <div className="mt-10 lg:max-w-lg flex flex-col gap-5 text-xl">
               <p>
                 Quisque et nunc quis quam convallis luctus vel vel erat. Nulla
                 facilisi. Nullam semper cursus eros, sed maximus augue varius sit

@@ -29,9 +29,29 @@ export default function Ansatte({ }) {
             linkedin: "https://www.linkedin.com/in/andersbw/"
         },
         {
+            name: "Freja Mürer",
+            position: "Administrations- & Kommunikationsassistent",
+            position_eng: "Administration & Communication Assistant",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel fringilla libero. Quisque eu efficitur augue. Nulla facilisi. Sed vulputate, turpis eget cursus dictum, justo ipsum consequat nunc, sit amet tempus ligula purus vel purus.",
+            img: "/employeesImg/emp_placeholder.jpg",
+            tel: "+45 2320 6930",
+            email: "fre@willumcph.com",
+            linkedin: "https://www.linkedin.com/in/andersbw/"
+        },
+        {
             name: "Hans Hansen",
             position: "Projektleder",
             position_eng: "Project Manager",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel fringilla libero. Quisque eu efficitur augue. Nulla facilisi. Sed vulputate, turpis eget cursus dictum, justo ipsum consequat nunc, sit amet tempus ligula purus vel purus.",
+            img: "/employeesImg/emp_placeholder.jpg",
+            tel: "+45 2476 0467",
+            email: "abw@willumcph.com",
+            linkedin: "https://www.linkedin.com/in/andersbw/"
+        },
+        {
+            name: "Hans Hansen",
+            position: "Entrepriseleder",
+            position_eng: "Assistant Project Manager",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel fringilla libero. Quisque eu efficitur augue. Nulla facilisi. Sed vulputate, turpis eget cursus dictum, justo ipsum consequat nunc, sit amet tempus ligula purus vel purus.",
             img: "/employeesImg/emp_placeholder.jpg",
             tel: "+45 2476 0467",
