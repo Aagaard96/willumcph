@@ -5,6 +5,10 @@ import Stillinger from '../components/stillinger'
 import { PiArrowDownFill } from 'react-icons/pi'
 import Link from 'next/link'
 
+export const metadata = {
+    title: 'Job & Karriere',
+};
+
 const opslag = [
     {
         stilling: "Entrepriseleder",

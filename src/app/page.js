@@ -18,8 +18,8 @@ export default function Home() {
           }}
         >
           <div className="flex flex-col font-medium max-w-6xl uppercase text-mainBg justify-center items-center md:items-start md:justify-start md:col-start-2 md:col-span-2 md:row-start-2 pt-10">
-            <Animation as="h1" type="OnlyAppear" duration={1.25} delay={0.30} className="text-6xl lg:text-8xl text-center md:text-start flex items-baseline font-bold">
-              willum cph
+            <Animation as="h1" type="OnlyAppear" duration={1.25} delay={0.30} className="text-7xl lg:text-8xl text-center md:text-start flex items-baseline font-bold">
+              willum
               <span className="flex items-baseline">
                 <span className="bg-white w-[25px] h-[25px] rounded-full inline-block ml-1"></span>
               </span>
@@ -73,7 +73,7 @@ export default function Home() {
               <p className=""><span className="font-semibold">Vores Tilgang:</span><br />
                 Vi tror på at skabe tætte samarbejdsrelationer med vores kunder og lytte nøje til deres behov og visioner. Ved at forstå dine mål og krav kan vi skræddersy løsninger, der opfylder dine forventninger og overstiger dine forventninger.
                 Vores dedikerede team af ingeniører og designere er passionerede og engagerede i at levere enestående resultat, der ikke kun opfylder tekniske standarder, men også skaber værdi og skønhed i det byggede miljø.</p>
-              <Link href="/" className="text-accent font-bold inline-flex items-center hover:underline">Se hvilke projekter vi har arbejdet på <span><PiArrowRightFill className="text-2xl" /></span></Link>
+              <Link href="/kunder-projekter" className="text-accent font-bold inline-flex items-center hover:underline">Se hvilke projekter vi har arbejdet på <span><PiArrowRightFill className="text-2xl" /></span></Link>
             </div>
           </div>
         </section>

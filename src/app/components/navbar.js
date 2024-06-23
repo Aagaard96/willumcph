@@ -12,11 +12,11 @@ const menuItems = [
             { label: "byggeteknisk rådgivning", href: "/fagomraader/byggeteknisk-raadgivning" },
             { label: "byggetilsyn", href: "/fagomraader/byggetilsyn" },
             { label: "totalrådgivning", href: "/fagomraader/totalraadgivning" },
-            { label: "sikkerhedsrepræsentation", href: "/fagomraader/sikkerhedsrepraesentant" },
-            { label: "entrepriseret", href: "/fagomraader/entrepriseret" },
+            { label: "sikkerhedsrepræsentation", href: "/fagomraader/sikkerheds-repraesentantion" },
+            { label: "entrepriseret", href: "/fagomraader/entrepriseretslig-raadgivning" },
         ]
     },
-    { label: "kunder & projekter", href: "/projekter" },
+    { label: "kunder & projekter", href: "/kunder-projekter" },
     { label: "vores team", href: "/teamet-bag" },
     { label: "job & karriere", href: "/job-karriere" },
     { label: "kontakt", href: "/kontakt" }

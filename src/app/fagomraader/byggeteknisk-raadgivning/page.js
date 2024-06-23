@@ -6,7 +6,7 @@ import Link from "next/link";
 import { PiArrowRightFill } from "react-icons/pi";
 
 export const metadata = {
-  title: 'Fagområder - Bygherrerådgivning',
+  title: 'Fagområder - Byggeteknisk Rådgivning',
 };
 
 export default function Byggeraadgivning() {
@@ -17,7 +17,7 @@ export default function Byggeraadgivning() {
       <section className="py-20 mx-auto max-w-7xl px-5">
         <article className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           <div className="flex-1 mx-auto">
-            <SectionHeading heading="bygherrerådgivning" />
+            <SectionHeading heading="byggeteknisk rådgivning" />
             <div className="mt-10 lg:max-w-lg flex flex-col gap-5 text-lg">
               <p>
                 Quisque et nunc quis quam convallis luctus vel vel erat. Nulla

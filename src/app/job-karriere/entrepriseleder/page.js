@@ -2,10 +2,14 @@ import React from 'react'
 import Hero from '../../components/hero'
 import SectionHeading from '../../components/sectionHeading'
 
+export const metadata = {
+    title: 'Job & Karriere - Entrepriseleder',
+};
+
 export default function Entrepriseleder() {
     return (
         <>
-            <Hero backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="kontakt os" />
+            <Hero backgroundImage="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="entrepriseleder" />
 
             <article className="py-20 mx-auto max-w-7xl px-5">
                 <SectionHeading heading="hvad kan vi gøre for dig?" />

@@ -38,7 +38,7 @@ export default function Fagomraader() {
             title: "sikkerheds repræsentant",
             img: <FaHelmetSafety className='text-accent size-16 md:size-20' />,
             button: "til sikkerhedsrepræsentation",
-            link: "/fagomraader/sikkerhedsrepraesentant",
+            link: "/fagomraader/sikkerheds-repraesentation",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {

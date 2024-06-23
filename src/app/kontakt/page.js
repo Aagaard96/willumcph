@@ -1,27 +1,7 @@
-"use client"
 import React from 'react'
 import SectionHeading from '../components/sectionHeading'
 import Hero from '../components/hero'
-import { Input, Select, SelectItem, Textarea } from '@nextui-org/react'
-
-const options = [
-    {
-        label: "Privat",
-        value: "privat",
-    },
-    {
-        label: "Erhverv",
-        value: "erhverv",
-    },
-    {
-        label: "Business",
-        value: "business",
-    },
-    {
-        label: "Øvrige",
-        value: "øvrige",
-    },
-];
+import KontaktForm from '../components/kontakt-form';
 
 const formaal = [
     {
@@ -41,6 +21,10 @@ const formaal = [
         content: "for dig der gerne vil have hjælp i det private"
     }
 ]
+
+export const metadata = {
+    title: 'Kontakt Os',
+  };
 
 export default function Kontakt() {
     return (
@@ -63,7 +47,7 @@ export default function Kontakt() {
                 <div className='max-w-7xl mx-auto'>
                     <SectionHeading heading="hvilket formål?" />
                     <div className='flex flex-col lg:flex-row mt-10 gap-10 lg:gap-0 max-w-7xl'>
-                        <div className='flex flex-col justify-evenly flex-1'>
+                        <div className='flex flex-col justify-evenly gap-y-5 lg:gap-y-0 flex-1'>
                             {formaal.map((item, i) => (
                                 <article key={i} className='lg:w-[400px] h-[100px] bg-white rounded p-4 flex flex-col justify-evenly border-1 border-accent/50 shadow-md shadow-accent/50'>
                                     <h4 className='uppercase font-semibold'>{item.title}</h4>
@@ -72,82 +56,7 @@ export default function Kontakt() {
                             ))}
                         </div>
                         <article className='flex-1'>
-                            <form
-                                name="contact"
-                                method="POST"
-                                action="/kontakt-os"
-                                netlify-honeypot="bot-field"
-                                data-netlify="true"
-                                className="rounded-md bg-mainBg shadow-sm shadow-accent text-mainText"
-                            >
-                                <input type="hidden" name="form-name" value="contact" />
-                                <div className="px-5 py-5 mb-8 bg-accent rounded-t-md text-mainBg">
-                                    <h3 className="text-2xl font-extrabold uppercase">
-                                        Skriv til os:
-                                    </h3>
-                                    <span className="font-medium">Vi bestræber os på at svare indenfor 1-3 hverdage.</span>
-                                </div>
-                                {/* Bot-trigger field */}
-                                <div className="hidden">
-                                    <label>
-                                        Don&apos;t fill this out if you&apos;re human: <input name="bot-field" />
-                                    </label>
-                                </div>
-                                <div className="mb-8 px-5">
-                                    <Input
-                                        isRequired
-                                        radius='sm'
-                                        variant="faded"
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        label="Navn:"
-                                    />
-                                </div>
-                                <div className="mb-8 px-5">
-                                    <Input
-                                        isRequired
-                                        radius="sm"
-                                        variant="faded"
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        label="E-mail:"
-                                    />
-                                </div>
-                                <div className="mb-8 px-5">
-                                    <Select
-                                        name="Role[]"
-                                        variant="faded"
-                                        radius="sm"
-                                        isRequired
-                                        className="max-w-full"
-                                        label="Formål:"
-                                    >
-                                        {options.map((option, i) => (
-                                            <SelectItem key={i} value={option.value}>
-                                                {option.label}
-                                            </SelectItem>
-                                        ))}
-                                    </Select>
-                                </div>
-                                <div className="mb-8 px-5">
-                                    <Textarea
-                                        variant="faded"
-                                        radius="sm"
-                                        isRequired
-                                        name="message"
-                                        id="message"
-                                        placeholder="Skriv din besked her.."
-                                        label="Besked:"
-                                        className="max-w-full"
-                                    />
-                                </div>
-                                <div className="flex justify-center rounded-b-md bg-accent hover:bg-accent/50 transition-colors duration-200 text-mainBg">
-                                    <button className='py-5 text-2xl uppercase' type='submit'>send besked</button>
-                                </div>
-                                <div data-netlify-recaptcha="true"></div>
-                            </form>
+                            <KontaktForm />
                         </article>
                     </div>
                 </div>
