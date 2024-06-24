@@ -32,6 +32,7 @@ export default function KontaktForm() {
             data-netlify="true"
             className="rounded-md bg-mainBg shadow-sm shadow-accent text-mainText"
         >
+            <input type="hidden" name='subject' value="Henvendelse fra Willum.dk" />
             <input type="hidden" name="form-name" value="contact" />
             <div className="px-5 py-5 mb-8 bg-accent rounded-t-md text-mainBg">
                 <h3 className="text-2xl font-extrabold uppercase">
