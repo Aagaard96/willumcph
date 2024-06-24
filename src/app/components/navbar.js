@@ -12,7 +12,7 @@ const menuItems = [
             { label: "byggeteknisk rådgivning", href: "/fagomraader/byggeteknisk-raadgivning" },
             { label: "byggetilsyn", href: "/fagomraader/byggetilsyn" },
             { label: "totalrådgivning", href: "/fagomraader/totalraadgivning" },
-            { label: "sikkerhedsrepræsentation", href: "/fagomraader/sikkerheds-repraesentantion" },
+            { label: "sikkerheds repræsentation", href: "/fagomraader/sikkerheds-repraesentation" },
             { label: "entrepriseret", href: "/fagomraader/entrepriseretslig-raadgivning" },
         ]
     },
@@ -56,7 +56,7 @@ export default function Navigation() {
             </NavbarBrand>
 
             <NavbarMenu
-                className="gap-5 lg:gap-10 items-center justify-center bg-accent/50 ">
+                className="gap-5 lg:gap-10 items-center justify-center bg-accent/80 backdrop-blue-sm ">
                 {menuItems.map((item, index) => (
                     <div key={index} className="flex items-center">
                         <Link

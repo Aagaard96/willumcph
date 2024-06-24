@@ -9,7 +9,7 @@ export default function Hero({ backgroundImage, title }) {
             }}
 
         >
-            <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase'>{title}</h2>
+            <h2 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-center px-5'>{title}</h2>
         </section>
     )
 }

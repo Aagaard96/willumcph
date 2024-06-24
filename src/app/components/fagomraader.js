@@ -35,7 +35,7 @@ export default function Fagomraader() {
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
-            title: "sikkerheds repræsentant",
+            title: "sikkerheds repræsentation",
             img: <FaHelmetSafety className='text-accent size-16 md:size-20' />,
             button: "til sikkerhedsrepræsentation",
             link: "/fagomraader/sikkerheds-repraesentation",
@@ -45,7 +45,7 @@ export default function Fagomraader() {
             title: "entrepriseretslig rådgivning",
             img: <SiQuicklook className='text-accent size-16 md:size-20' />,
             button: "til entrepriseret",
-            link: "/fagomraader/entrepriseret",
+            link: "/fagomraader/entrepriseretslig-raadgivning",
             content: "Bygherrerådgivning sikrer optimal projektledelse, budgetstyring og kvalitetssikring i byggeprocessen. Med ekspertise og erfaring guider vi dig trygt gennem hele projektet fra planlægning til afslutning."
         },
         {
@@ -64,8 +64,8 @@ export default function Fagomraader() {
                     <div className='row-span-3 row-start-1 grid place-items-center pt-2.5'>
                         {fag.img}
                     </div>
-                    <h3 className='row-start-4 grid place-content-center text-center text-sm pb-2 '>{fag.title}</h3>
-                    <Link href={fag.link} className='bg-accent row-start-5 text-heroText flex items-center justify-center'>læs mere</Link>
+                    <h3 className='row-start-4 grid place-content-center text-center text-sm pb-2 px-2 '>{fag.title}</h3>
+                    <Link href={fag.link} className='bg-accent row-start-5 text-heroText flex items-center justify-center hover:bg-accent/80 transition duration-200'>læs mere</Link>
                 </StaggerAnimation>
             ))}
         </>
