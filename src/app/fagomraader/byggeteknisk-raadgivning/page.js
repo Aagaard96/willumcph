@@ -4,12 +4,13 @@ import SectionHeading from "../../components/sectionHeading";
 import Image from "next/image";
 import Link from "next/link";
 import { PiArrowRightFill } from "react-icons/pi";
+import TextCtn from "../../components/text-ctn";
 
 export const metadata = {
   title: 'Fagområder - Byggeteknisk Rådgivning',
 };
 
-export default function Byggeraadgivning() {
+export default function ByggetekniskRaadgivning() {
   return (
     <>
       <Hero backgroundImage="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="byggeteknisk rådgivning" />
@@ -18,7 +19,7 @@ export default function Byggeraadgivning() {
         <article className="flex flex-col lg:flex-row gap-10 lg:gap-20">
           <div className="flex-1 mx-auto">
             <SectionHeading heading="byggeteknisk rådgivning" />
-            <div className="mt-10 lg:max-w-lg flex flex-col gap-5 text-lg">
+            <TextCtn>
               <p>
                 Quisque et nunc quis quam convallis luctus vel vel erat. Nulla
                 facilisi. Nullam semper cursus eros, sed maximus augue varius sit
@@ -41,7 +42,7 @@ export default function Byggeraadgivning() {
                 facilisi. Nullam semper cursus eros, sed maximus augue varius sit
                 amet. Ut sit amet turpis sed massa efficitur posuere. Ut luctus.
               </p>
-            </div>
+            </TextCtn>
           </div>
 
           <div className="flex justify-center lg:justify-end items-center">
@@ -66,7 +67,7 @@ export default function Byggeraadgivning() {
           </div>
           <div className="flex-1 order-1 mx-auto">
             <h4 className="uppercase font-bold text-4xl">Hvordan vi arbejder</h4>
-            <div className="mt-10 lg:max-w-lg flex flex-col gap-5 text-xl">
+            <TextCtn>
               <p>
                 Quisque et nunc quis quam convallis luctus vel vel erat. Nulla
                 facilisi. Nullam semper cursus eros, sed maximus augue varius sit
@@ -91,7 +92,7 @@ export default function Byggeraadgivning() {
                 amet. Ut sit amet turpis sed massa efficitur posuere. Ut luctus.
               </p>
               <Link href="/kontakt" className="text-accent font-bold inline-flex items-center hover:underline">Klar til et samarbejde? Klik her <span><PiArrowRightFill className="text-2xl" /></span></Link>
-            </div>
+            </TextCtn>
           </div>
         </article>
 

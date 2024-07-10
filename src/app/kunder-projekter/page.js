@@ -34,7 +34,7 @@ export default function Page() {
       <article className="py-20 bg-accentBg px-5">
         <div className='grid grid-cols-1 max-w-7xl lg:grid-cols-2 mx-auto gap-5'>
           <ModalProjekt />
-          </div>
+        </div>
       </article>
     </>
   )
