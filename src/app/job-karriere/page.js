@@ -16,19 +16,9 @@ const opslag = [
         image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-        stilling: "Byggesagkyndig",
-        link: "/kontakt",
+        stilling: "Projektleder",
+        link: "/job-karriere/projektleder",
         image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-        stilling: "Sekretær",
-        link: "/kontakt",
-        image: "https://images.unsplash.com/photo-1713947506179-baa795d9c893?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        stilling: "Studiemedhjælper",
-        link: "/kontakt",
-        image: "https://images.unsplash.com/photo-1507537509458-b8312d35a233?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     }
 
 ]
@@ -50,7 +40,7 @@ export default function JobKarriere() {
                         <p className="flex-1"><span className="font-semibold">Vores Tilgang:</span><br />
                             Vi tror på at skabe tætte samarbejdsrelationer med vores kunder og lytte nøje til deres behov og visioner. Ved at forstå dine mål og krav kan vi skræddersy løsninger, der opfylder dine forventninger og overstiger dine forventninger.
                             Vores dedikerede team af ingeniører og designere er passionerede og engagerede i at levere enestående resultat, der ikke kun opfylder tekniske standarder, men også skaber værdi og skønhed i det byggede miljø.</p>
-                        <Link href="#stillinger" className="text-accent font-bold inline-flex items-center hover:underline pt-5">Se hvilke projekter vi har arbejdet på <span><PiArrowDownFill className="text-2xl" /></span></Link>
+                        <Link href="#stillinger" className="text-accent uppercase font-bold inline-flex items-center hover:underline pt-5">Se hvilke ledige stillinger vi har i øjeblikket<span><PiArrowDownFill className="text-2xl" /></span></Link>
                     </div>
                 </div>
             </article>

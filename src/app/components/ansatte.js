@@ -33,7 +33,7 @@ export default function Ansatte({ }) {
             position: "Administrations- & Kommunikationsassistent",
             position_eng: "Administration & Communication Assistant",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel fringilla libero. Quisque eu efficitur augue. Nulla facilisi. Sed vulputate, turpis eget cursus dictum, justo ipsum consequat nunc, sit amet tempus ligula purus vel purus.",
-            img: "/employeesImg/emp_placeholder.jpg",
+            img: "/employeesImg/emp_freja.jpg",
             tel: "+45 2320 6930",
             email: "fre@willumcph.com",
             linkedin: "https://www.linkedin.com/in/andersbw/"

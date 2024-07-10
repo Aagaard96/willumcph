@@ -30,6 +30,9 @@ module.exports = {
         playfair: ['var(--font-playfair)'],
         inria: ['var(--font-inria)'],
       },
+      screens: {
+        xs: '500px'
+      }
     },
   },
 

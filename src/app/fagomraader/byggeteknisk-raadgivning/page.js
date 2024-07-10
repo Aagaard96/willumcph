@@ -12,7 +12,7 @@ export const metadata = {
 export default function Byggeraadgivning() {
   return (
     <>
-      <Hero backgroundImage="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="bygherrerådgivning" />
+      <Hero backgroundImage="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="byggeteknisk rådgivning" />
 
       <section className="py-20 mx-auto max-w-7xl px-5">
         <article className="flex flex-col lg:flex-row gap-10 lg:gap-20">

@@ -16,7 +16,7 @@ export default function SectionHeading({ heading, className }) {
     });
 
     return (
-        <div ref={ref} className={`relative inline-block uppercase font-bold text-3xl md:text-4xl ${className}`}>
+        <div ref={ref} className={`relative inline-block uppercase font-bold text-2xl xs:text-3xl md:text-4xl ${className}`}>
             <h2 className="relative z-10 pb-1">{heading}</h2>
             <motion.div
                 className="absolute bottom-0 left-0 w-full h-1.5 bg-accent origin-left"
